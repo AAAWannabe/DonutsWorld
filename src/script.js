@@ -25,7 +25,7 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('textures/matcaps/2.png')
+const matcapTexture = textureLoader.load('textures/matcaps/3.png')
 
 /**
  * Fonts
@@ -34,7 +34,6 @@ const fontLoader = new FontLoader()
 
 fontLoader.load(
     'fonts/Luckiest Guy_Regular.json',
-    // 'fonts/Ma Shan Zheng_Regular.json',
     // 'fonts/helvetiker_regular.typeface.json',
     (font) => {
         const textGeometry = new TextGeometry(
