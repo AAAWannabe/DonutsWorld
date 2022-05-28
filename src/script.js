@@ -25,7 +25,7 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('textures/matcaps/1.png')
+const matcapTexture = textureLoader.load('textures/matcaps/8.png')
 
 /**
  * Fonts
@@ -73,7 +73,7 @@ fontLoader.load(
         const donutGeometry = new THREE.TorusBufferGeometry(0.3, 0.2, 20, 45)
         // const donutMaterial = new THREE.MeshMatcapMaterial({ matcap: matcapTexture })
 
-        for (let i = 0; i < 300; i++){
+        for (let i = 0; i < 300; i++) {
             const donut = new THREE.Mesh(donutGeometry, material)
             donut.position.x = (Math.random() - 0.5) * 10
             donut.position.y = (Math.random() - 0.5) * 10
